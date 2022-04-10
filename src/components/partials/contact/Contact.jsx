@@ -1,23 +1,29 @@
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { useSnackbar } from "notistack";
 
 import { contactOptions } from "lib/utils/contact";
 import "./contact.css";
 
 export const Contact = () => {
+  const { enqueueSnackbar } = useSnackbar();
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    enqueueSnackbar("Sending email...", { variant: "info" });
 
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAIL_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_USER_ID
-    );
-
-    e.target.reset();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(() => {
+        e.target.reset();
+        enqueueSnackbar("Message sent successfully!", { variant: "success" });
+      });
   };
 
   return (

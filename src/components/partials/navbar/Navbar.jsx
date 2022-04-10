@@ -8,7 +8,6 @@ export const Navbar = () => {
   const [activeNav, setActiveNav] = useState();
 
   const getCommonProperties = (section) => {
-    console.log("Section: ", section);
     return {
       activeClass: activeNav === section ? "active" : "",
       to: section,

@@ -1,3 +1,6 @@
+import { SnackbarProvider } from "notistack";
+import Slide from "@material-ui/core/Slide";
+
 import {
   About,
   Contact,
@@ -11,7 +14,16 @@ import {
 } from "./components/partials";
 
 const App = () => (
-  <>
+  <SnackbarProvider
+    maxSnack={1}
+    anchorOrigin={{
+      vertical: "top",
+      horizontal: "right",
+    }}
+    TransitionComponent={Slide}
+    dense={false}
+    autoHideDuration={3000}
+  >
     <Header />
     <Navbar />
     <About />
@@ -21,7 +33,7 @@ const App = () => (
     <Testimonials />
     <Contact />
     <Footer />
-  </>
+  </SnackbarProvider>
 );
 
 export default App;
