@@ -53,12 +53,14 @@
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =========== */
 @media screen and (max-width: 1024px) {
   .services__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .service {
     height: auto;
+    flex: 0 0 calc(49% - 20px);
   }
 }
 
@@ -67,5 +69,9 @@
   .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .service {
+    flex: 1;
   }
 }
