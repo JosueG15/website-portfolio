@@ -4,23 +4,23 @@ import { RiServiceLine } from "react-icons/ri";
 
 export const navbarOptions = [
   {
-    link: "#home",
+    link: "home",
     icon: <AiOutlineHome />,
   },
   {
-    link: "#about",
+    link: "about",
     icon: <AiOutlineUser />,
   },
   {
-    link: "#experience",
+    link: "experience",
     icon: <BiBook />,
   },
   {
-    link: "#services",
+    link: "services",
     icon: <RiServiceLine />,
   },
   {
-    link: "#contact",
+    link: "contact",
     icon: <BiMessageSquareDetail />,
   },
 ];
