@@ -15,7 +15,11 @@ export const Testimonials = () => (
       pagination={{ clickable: true }}
       modules={[Pagination]}
       spaceBetween={40}
-      slidesPerView={2}
+      slidesPerView={1}
+      loop={true}
+      breakpoints={{
+        1024: { slidesPerView: 2 },
+      }}
     >
       {testimonials.map(({ avatar, name, review }, index) => (
         <SwiperSlide key={index} className="testimonial">
