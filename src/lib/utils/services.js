@@ -17,13 +17,13 @@ export const services = [
   {
     serviceLabel: "Backend Development",
     services: [
-      "Write, test, and maintain development solutions for code-related problems",
+      "Create development solutions for code-related problems",
       "Optimize and maintain existing code",
-      "Write, test, and maintain database solutions for data-related problems",
+      "Create database solutions for data-related problems",
       "Integrate and maintain 3rd party services",
-      "Write, test, and maintain API solutions for data-related problems",
+      "Create API solutions for data-related problems",
       "Identify and resolve performance issues",
-      "Identify new features, communicate effectively with developers, designers, and system administrators.",
+      "Communicate effectively with the team",
       "Create and maintain documentation",
       "Organize and manage code",
       "Debug and troubleshoot code",
