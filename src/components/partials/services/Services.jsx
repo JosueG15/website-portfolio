@@ -18,7 +18,9 @@ export const Services = () => (
           <ul className="service__list">
             {service.services.map((item, i) => (
               <li key={`service-${i}`}>
-                <BiCheck className="service__list-icon" />
+                <div>
+                  <BiCheck className="service__list-icon" />
+                </div>
                 <p>{item}</p>
               </li>
             ))}
