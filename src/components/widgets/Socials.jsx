@@ -5,10 +5,14 @@ import { FiDribbble } from "react-icons/fi";
 export const Socials = () => {
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://www.linkedin.com/in/josue-garc%C3%ADa-b62269183/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <BsLinkedin />
       </a>
-      <a href="https://github.com" target="_blank" rel="noreferrer">
+      <a href="https://github.com/JosueG15" target="_blank" rel="noreferrer">
         <FaGithub />
       </a>
       <a href="https://dribbble.com" target="_blank" rel="noreferrer">

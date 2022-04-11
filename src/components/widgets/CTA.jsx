@@ -1,4 +1,4 @@
-import CV from "../../assets/cv.pdf";
+import CV from "assets/cv.pdf";
 
 export const CTA = () => (
   <div className="cta">

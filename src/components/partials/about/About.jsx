@@ -1,7 +1,4 @@
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
-
+import { aboutList } from "lib/utils";
 import ME from "assets/me-about.jpg";
 import "./about.css";
 
@@ -18,28 +15,22 @@ export const About = () => (
       </div>
       <div className="about__content">
         <div className="about__cards">
-          <article className="about__card">
-            <FaAward className="about__icon" />
-            <h5>Experience</h5>
-            <small>4+ Years Working</small>
-          </article>
-          <article className="about__card">
-            <FiUsers className="about__icon" />
-            <h5>Clients</h5>
-            <small>200+ Clients Worlwide</small>
-          </article>
-          <article className="about__card">
-            <VscFolderLibrary className="about__icon" />
-            <h5>Projects</h5>
-            <small>80+ Completed Projects</small>
-          </article>
+          {aboutList.map(({ title, text, icon }, i) => (
+            <article key={i} className="about__card">
+              {icon}
+              <h5>{title}</h5>
+              <small>{text}</small>
+            </article>
+          ))}
         </div>
 
         <p>
-          Lorem ipsum dolor sit amet . The graphic and typographic operators
-          know this well, in reality all the professions dealing with the
-          universe of communication have a stable relationship with these words,
-          but what is it? Lorem ipsum is a dummy text without any sense.
+          Hi there 👋! Welcome to my website. I'm a software developer based in
+          El Salvador 🇸🇻 with +4 years of experience on the field. I enjoy
+          building things that live on the internet, and I'm always on the
+          lookout for new technologies to learn. In my free time I enjoy flying
+          drones and read about the latest tech news. If you want to get in
+          touch feel free to contact me.
         </p>
 
         <a href="#contact" className="btn btn-primary">

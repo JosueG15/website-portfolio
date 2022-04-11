@@ -9,6 +9,10 @@ export const experiences = [
       ["Bootstrap", "Experienced"],
       ["Material UI", "Experienced"],
       ["React", "Experienced"],
+      ["Jest", "Experienced"],
+      ["Redux", "Experienced"],
+      ["Apollo Client", "Experienced"],
+      ["NextJS", "Intermediate"],
     ],
   },
   {
@@ -16,10 +20,15 @@ export const experiences = [
     className: "backend",
     technologies: [
       ["NodeJS", "Experienced"],
+      ["Express", "Experienced"],
       ["PHP", "Intermediate"],
       ["MongoDB", "Experienced"],
+      ["SQL", "Experienced"],
       ["MySQL", "Experienced"],
       ["Python", "Experienced"],
+      ["GraphQL", "Experienced"],
+      [".NET", "Intermediate"],
+      ["Laravel", "Intermediate"],
     ],
   },
 ];
